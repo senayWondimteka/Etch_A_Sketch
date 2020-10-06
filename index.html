@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Etch A Sketch </title>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+    <body>
+        <div class="container">
+
+        </div>
+
+        <button id='clearGrid'> Clear</button>
+    </body>
+
+    <script>
+        function createDiv()
+        {
+            let container = document.querySelector('.container');
+
+            let i = 0;
+            while(i < 16)
+            {
+                let subChild = document.createElement('div');
+
+                //subChild.classList.add('.fresh');
+
+                subChild.style.cssText = "display: inline-block; height: 16px; width: 16px;";
+                subChild.style.backgroundColor = 'blue';
+
+                container.appendChild(subChild);
+                i++;
+            }
+        }
+
+        function changeColor(e) {
+
+            console.log("This is inside hove function");
+
+            console.log(e.target);
+            //e.target.classList.add('removeBground');
+            e.target.style.background = 'red';
+            //grids.forEach(grid => )
+        }
+
+        let divs = document.querySelectorAll('div');
+        divs.forEach(div => div.addEventListener('mouseover', changeColor ));
+
+        //window.addEventListener('mouseover', changeColor);
+
+        createDiv();
+
+        function clearPage()
+        {
+            console.log('clear page');
+
+            let numOfGrid = prompt("Please Enter the number of Grids? ");
+            
+            console.log("The num is: " + numOfGrid);
+        }
+
+        let bt1 = document.querySelector('button');
+
+        bt1.addEventListener('click', clearPage);
+    </script>
+</html>
