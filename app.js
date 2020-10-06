@@ -10,7 +10,8 @@ window.onload = () => {
             clearBtn.addEventListener('click', () => {
                 let cells = document.querySelectorAll('.cell');
                 cells.forEach(cell => {
-                    cell.classList.remove('draw');
+                    //cell.classList.remove('draw');
+                    cell.style.backgroundColor = "white";
                 });
             });
 
