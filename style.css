@@ -1,6 +1,77 @@
+#title {
+    font-size: 4em;
+    color: #AD5B28;
+    font-family: 'Sansita Swashed', cursive;
+}
+
+body {
+    background-color: #17AAAD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+button {
+    font-family: 'Sansita Swashed', cursive;
+    border-style: solid;
+    background-color: #FA9252;
+    color: #AD3815;
+    padding: 14px 10px;
+    border-radius: 8%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1.5em;
+    width: 150px;
+    margin-top: 13px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 
 
+#grid-container {
+    border-style: solid;
+    border-color: #A15347;
+    border-radius: 2%;
+    border-width: 10px;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+#button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.cell {
+    background-color: white;
+    flex: 1;
+    border-color: black;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.draw {
+    background-color: blue;
+}
 .fresh {
+    display: inline-block;
     height: 16px; 
     width: 16px;
     background-color: blue;
